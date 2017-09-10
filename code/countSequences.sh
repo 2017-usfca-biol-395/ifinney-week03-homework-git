@@ -8,5 +8,5 @@
 
 for file in $@
 do
-        grep $file
+        echo $file
 done

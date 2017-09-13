@@ -7,16 +7,16 @@
 # Bella Finney ifinney@dons.usfca.edu
 
 
-cd ..
-cd data/raw_data/
+cd ../data/raw_data/
 
 # This code sends the working directory to the repository and then into 
 # data and then finally into raw data
 
 for file in $@
 do
-        echo "This file has $(grep -c "^>"  $file) sequences."
+        echo "The file $file has $(grep -c "^>" $file) sequences."
 done
 
 # This code outputs a script that reads each fasta file and reports 
-# sequence numbers
+# sequence number
+# When running this script type "./countSequences.sh *.fasta"

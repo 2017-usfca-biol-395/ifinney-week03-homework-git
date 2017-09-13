@@ -6,11 +6,26 @@
 
 cd ifinney-week03-homework-git
 mkdir code data output
+	touch code/.gitkeep
 cd data
+	touch data/.gitkeep
 mkdir raw_data
 cd raw_data
 curl -L http://npk.io/PUlBaY+ -o fasta-archive.zip
+	echo "Downloading zip files"
 unzip fasta-archive.zip
+	echo "Unzipping zip files"
 cd ../..
 cd output
-mkdir figures tables
+	touch output/.gitkeep
+mkdir figures
+	touch figures/.gitkeep
+mkdir tables
+	touch tables/.gitkeep
+
+	echo "Creating and Running all directories"
+	echo "All Done!"
+
+
+# .gitkeep files are invisible files that are added into empty directories
+	# they help git track these directories (only tracks if file in them)

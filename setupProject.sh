@@ -15,6 +15,7 @@ curl -L http://npk.io/PUlBaY+ -o fasta-archive.zip
 	echo "Downloading zip files"
 unzip fasta-archive.zip
 	echo "Unzipping zip files"
+rm fasta-archive.zip
 cd ../..
 cd output
 	touch output/.gitkeep
